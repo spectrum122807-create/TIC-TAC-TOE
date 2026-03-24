@@ -1,0 +1,75 @@
+/* Center everything */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #14738a;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Game grid */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    
+}
+
+/* Each box (button) */
+.box {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #eee5e5;
+    background-color: #1e1e1e;
+    border: 2px solid #52a093;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+/* Hover effect */
+.box:hover {
+    background-color: #57c4a9;
+    color: #000;
+        box-shadow: 0 0 1rem  #080808;
+}
+
+/* When clicked (optional active effect) */
+.box:active {
+    transform: scale(0.95);
+    background-color: gray;
+}
+#reset-button{
+     margin-top: 20px;
+    padding: 20px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #33da27;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+   margin: 20px auto;
+    
+
+}
+.heading{
+    padding-left: 70px;
+}
+#reset-button:hover {
+    background-color: #001b64;
+    box-shadow:0 0 1rem #000;
+}
+
+/* Click effect */
+#reset-button:active {
+    transform: scale(0.95);
+}
